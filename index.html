@@ -14,19 +14,21 @@
 <body>
   
   <div id="header-div">
-    <div id="header-img"> 
-      <img src="./assets/goose.png" alt="Goose" id="goose-img" height="80px" width="80px"/>
-    </div>     
-   
-    <div id="header-h1">      
-      <h1>Welcome to <span id="honk-span">Honk</span></h1>
+    <div id="header-content">
+      <div id="header-img"> 
+        <img src="./assets/goose.png" alt="Goose" id="goose-img" height="80px" width="80px"/>
+      </div>     
+  
+      <div id="header-h1">      
+        <h1>Welcome to <span id="honk-span">Honk</span></h1>
+      </div>
+  
+      <button id="dark-mode-button"></button>
     </div>
-
-    <button id="dark-mode-button"></button>
   </div>
     
   <!-- **The method of post is needed in order to post content from the form inputs -->
-  <div>
+  <div id="main-content">
     <div id="fun-honk">
       <p>Honk</p>
     </div>
@@ -38,10 +40,12 @@
           <!-- type denotes type of content and in this case it is text, id allows for identifying the given element when styling or adding action to site, and placeholder is what will be in place of an input until an input is provided. -->
           <input type="text" name="name" id="name" placeholder="Enter your preferred name here">
         </div>
+
         <div id="form-input">
           <label for="form-title">Title</label>
           <input type="text" name="form-title" id="form-title" placeholder="Enter the title of your post here">
         </div>
+        
         <div id="form-input">
           <label for="post-content">Blog post</label>
           <input type="text" name="post-content" id="post-content" placeholder="Enter you thoughts and feelings here">

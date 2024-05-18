@@ -32,3 +32,5 @@ WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
 sourced 'goose.png' from https://purepng.com/photo/446/animals-goose
+
+gathered 'Aqua Cyan' from https://www.pinterest.com/pin/50-shades-of-aqua-color-names-hex-rgb-cmyk-codes--151222499980569779/
