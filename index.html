@@ -1,30 +1,46 @@
+<!-- press command and forward slash to comment a line or add a comment -->
+<!-- can press shift and tab to move a selected block of code all the way to the left then can press control and [ or ] to move in respective direction -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Honk - #1 Blog page</title>
 </head>
+
 <body>
+  
   <div id="header-div">
     <h1>Welcome to <span id="honk-span">Honk</span></h1>
     <button id="dark-mode-button"></button>
   </div>
     
-  <form id="blog-post-form" method="POST">
-    <div id="form-input">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" placeholder="Enter your preferred name here">
+  <!-- **The method of post is needed in order to post content from the form inputs -->
+  <div>
+    <div id="fun-image-div"></div>
+    
+    <div id="form-div">
+      <form id="blog-post-form" method="POST">
+        <div id="form-input">
+          <label for="name">Name</label>
+          <!-- type denotes type of content and in this case it is text, id allows for identifying the given element when styling or adding action to site, and placeholder is what will be in place of an input until an input is provided. -->
+          <input type="text" name="name" id="name" placeholder="Enter your preferred name here">
+        </div>
+        <div id="form-input">
+          <label for="form-title">Title</label>
+          <input type="text" name="form-title" id="form-title" placeholder="Enter the title of your post here">
+        </div>
+        <div id="form-input">
+          <label for="post-content">Blog post</label>
+          <input type="text" name="post-content" id="post-content" placeholder="Enter you thoughts and feelings here">
+        </div>  
+        <!-- Submit buttons can exist within forms -->
+        <button id="form-submit-button">Submit</button>
+      </form>
     </div>
-    <div id="form-input">
-      <label for="form-title">Title</label>
-      <input type="text" name="form-title" id="form-title" placeholder="Enter the title of your blog post here">
-    </div>
-    <div id="form-input">
-      <label for="post-content">Blog post</label>
-      <input type="text" name="post-content" id="post-content" placeholder="Enter you thoughts and feelings here">
-    </div>  
-  </form>
   </div>
+
 </body>
+
 </html>
