@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Honk - #1 Blog page</title>
 </head>
 <body>
-  
+  <div id="header-div">
+    <h1>Welcome to <span id="honk-span">Honk</span></h1>
+    <button id="dark-mode-button"></button>
+  </div>
+    
+  <form id="blog-post-form" method="POST">
+    <div id="form-input">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Enter your preferred name here">
+    </div>
+    <div id="form-input">
+      <label for="form-title">Title</label>
+      <input type="text" name="form-title" id="form-title" placeholder="Enter the title of your blog post here">
+    </div>
+    <div id="form-input">
+      <label for="post-content">Blog post</label>
+      <input type="text" name="post-content" id="post-content" placeholder="Enter you thoughts and feelings here">
+    </div>  
+  </form>
+  </div>
 </body>
 </html>
