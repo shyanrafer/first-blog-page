@@ -31,3 +31,4 @@ THEN I can see the title, the content, and the author of the post.
 WHEN I view the footer,
 THEN I am presented with a link to the developer's portfolio.
 
+sourced 'goose.png' from https://purepng.com/photo/446/animals-goose
