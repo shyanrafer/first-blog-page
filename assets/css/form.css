@@ -49,22 +49,32 @@
   font-size: 50px;
   color: #01F1F1;
   font-style: italic;
+  border-right: solid 2px black;
+  margin-right: 1px;
 }  
+
+/* The following command has a bug - the cursor shows across the whole width of the container. Gotta find out how to solve that. */
+#fun-honk p:hover {
+  cursor: pointer;
+  /* I would like to add a sound effect on click - a goose honking */
+}
 
 #form-div {
   width: 50%;
+  border-left: solid 2px black;
+  margin-left: 1px;
 }
-
+/* To align items vertically height has to be estabilished for the container */
 #blog-post-form {
+  height: 100%;
   display: grid;
   justify-content: center;
-  text-align: right;
+  text-align: left;
   align-items: center;
 }
 
 #form-submit-button {
-  max-width: 80px
-  
+  width: 80px
 }
 
 
