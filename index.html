@@ -12,62 +12,62 @@
 </head>
 
 <body>
-  
-  <div id="header-div">
-    <div id="header-content">
-      <div id="header-img"> 
-        <img src="./assets/goose.png" alt="Goose" id="goose-img" height="80px" width="80px"/>
-      </div>     
-  
-      <div id="header-h1">      
-        <h1>Welcome to <span id="honk-span">Honk</span></h1>
-      </div>
-      
-      <div id="dark-mode-button">
-        <button><img src="./assets/dark-mode-button.PNG" id="dark-mode-png"/></button>
-        <p>Dark/Light mode</p>
-      </div>  
-    </div>
-  </div>
+  <div class="container dark">
+    <div id="header-div">
+      <div id="header-content">
+        <div id="header-img"> 
+          <img src="./assets/goose.png" alt="Goose" id="goose-img" height="80px" width="80px"/>
+        </div>     
     
-  <!-- **The method of post is needed in order to post content from the form inputs -->
-  <div id="main-content">
-    <div id="fun-honk">
-      <p>Honk</p>
-    </div>
-    
-    <div id="form-div">
-      <form id="blog-post-form" method="POST">
-        <div id="form-input">
-          <label for="name">Name</label>
-          <!-- type denotes type of content and in this case it is text, id allows for identifying the given element when styling or adding action to site, and placeholder is what will be in place of an input until an input is provided. -->
-          <input type="text" name="name" id="name" placeholder="Enter your preferred name here">
-        </div>
-
-        <div id="form-input">
-          <label for="form-title">Title</label>
-          <input type="text" name="form-title" id="form-title" placeholder="Enter the title of your post here">
+        <div id="header-h1">      
+          <h1>Welcome to <span id="honk-span">Honk</span></h1>
         </div>
         
-        <div id="form-input">
-          <label for="post-content">Blog post</label>
-          <input type="text" name="post-content" id="post-content" placeholder="Enter you thoughts and feelings here">
+        <div id="dark-mode-button">
+          <button><img src="./assets/dark-mode-button.PNG" id="dark-mode-png"/></button>
+          <p>Dark/Light mode</p>
         </div>  
-        <div id="display-message"></div>
-        <!-- Submit buttons can exist within forms -->
-        <button id="form-submit-button">Submit</button>
-      </form> 
+      </div>
     </div>
-  </div>
+      
+    <!-- **The method of post is needed in order to post content from the form inputs -->
+    <div id="main-content">
+      <div id="fun-honk">
+        <p>Honk</p>
+      </div>
+      
+      <div id="form-div">
+        <form id="blog-post-form" method="POST">
+          <div id="form-input">
+            <label for="name">Name</label>
+            <!-- type denotes type of content and in this case it is text, id allows for identifying the given element when styling or adding action to site, and placeholder is what will be in place of an input until an input is provided. -->
+            <input type="text" name="name" id="name" placeholder="Enter your preferred name here">
+          </div>
 
-  <div id="bottom">
-    <footer>
-      <a href="https://shyanrafer.github.io/My-Web-Dev-Portfolio/" target="_blank">My web development portfolio</a>
-    </footer>
-  </div>
-  <script src="./assets/javascript/script.js"></script>
-  <script src="./assets/javascript/form.js"></script>
+          <div id="form-input">
+            <label for="form-title">Title</label>
+            <input type="text" name="form-title" id="form-title" placeholder="Enter the title of your post here">
+          </div>
+          
+          <div id="form-input">
+            <label for="post-content">Blog post</label>
+            <input type="text" name="post-content" id="post-content" placeholder="Enter you thoughts and feelings here">
+          </div>  
+          <div id="display-message"></div>
+          <!-- Submit buttons can exist within forms -->
+          <button id="form-submit-button">Submit</button>
+        </form> 
+      </div>
+    </div>
 
+    <div id="bottom">
+      <footer>
+        <a href="https://shyanrafer.github.io/My-Web-Dev-Portfolio/" target="_blank">My web development portfolio</a>
+      </footer>
+    </div>
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/form.js"></script>
+  </div>
 </body>
 
 </html>
