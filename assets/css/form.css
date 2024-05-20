@@ -37,12 +37,12 @@
 #main-content {
   width: 100%;
   height: 300px;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px;
   display: flex;
   flex-direction: grid;
 }
 
-#name, #form-title {
+#username, #form-title {
   width: 100%;
 }
 
@@ -88,20 +88,18 @@
 }
 
 footer {
-
+  height: 80px;
+  align-content: end;
+  border-bottom: solid 2px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* using viewport height for setting height is important as if one is to use anything otherwise itll only cover the area specifiec -100vh is 100% of the given viewport */
 /* dark mode */
-.dark {
-  background-color:#243447;
-  height: 100vh;
-  color: whitesmoke;
- 
-}
-
-.dark #form-div, #fun-honk, #main-content, #header-div {
-  border-color: #01F1F1;
-}
 
 /* light mode */
 .light {
@@ -110,3 +108,23 @@ footer {
   height: 100vh;
 }
 
+.light #form-div, #fun-honk, #main-content, #header-div, footer{
+  border-color: black;
+}
+
+
+.dark {
+  background-color:#243447;
+  height: 100vh;
+  color: whitesmoke;
+ 
+}
+
+.dark #form-div, #fun-honk, #main-content, #header-div, footer{
+  border-color: #01F1F1;
+}
+
+.dark a {
+  color: #01F1F1;
+  text-decoration: none;
+}
