@@ -108,7 +108,8 @@ a {
   height: 100vh;
 }
 
-.light #form-div, #fun-honk, #main-content, #header-div, footer{
+/*  */
+.light #form-div, .light #fun-honk, .light #main-content, .light #header-div, .light footer {
   border-color: black;
 }
 
@@ -120,7 +121,7 @@ a {
  
 }
 
-.dark #form-div, #fun-honk, #main-content, #header-div, footer{
+.dark #form-div, .dark #fun-honk, .dark #main-content, .dark #header-div, .dark footer{
   border-color: #01F1F1;
 }
 

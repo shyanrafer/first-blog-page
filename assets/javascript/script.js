@@ -7,7 +7,8 @@ const lightModeDarkMode = document.querySelector(`#dark-mode-button`);
 const container = document.querySelector(`.container`);
 
 // Next, one must setup a function that listens for a click event - to set the default display of the page to light and then switch to dark, one must use the following syntax
-let mode = `dark`;
+// Sets mode to light upon inital page load and then allows things to run smoothly thereafter
+let mode = `light`; 
 lightModeDarkMode.addEventListener('click', function () {
   // If mode is dark, apply light background
   if (mode === 'dark') {
@@ -21,6 +22,6 @@ lightModeDarkMode.addEventListener('click', function () {
   }
 });
 
-
+           
 // now use the variable to add an event listener of click and run a function with the following parameters
 
