@@ -2,9 +2,9 @@
 // Will also need to include a return of incomplete if the user doesnt fill out all the input boxes for the blog entry form
 const formSubmitButton = document.querySelector(`#form-submit-button`)
 const formDisplayMessage = document.querySelector(`#display-message`)
-const username = document.querySelector(`#username`).value.trim()
-const title = document.querySelector(`#form-title`).value
-const blogPost = document.querySelector(`#post-content`).value
+let usernameEl = document.querySelector(`#username`)
+let titleEl = document.querySelector(`#form-title`)
+let blogPostEl = document.querySelector(`#post-content`)
 // method is a 'preprogrammed' function
 
 function displayMessage(type, message) {
@@ -14,6 +14,10 @@ function displayMessage(type, message) {
 // must add .value otherwise ...
 formSubmitButton.addEventListener('click', function (event) {
   event.preventDefault();
+  const username = usernameEl.value.trim()
+  const title = titleEl.value.trim()
+  const blogPost =  blogPostEl.value.trim()       
+  
   if (username === '') {
     displayMessage('error', 'Name cannot be blank');
   } else if (title === '') {
@@ -23,17 +27,26 @@ formSubmitButton.addEventListener('click', function (event) {
   } else {
     displayMessage('success', 'Your post has been saved');
   }
+  
+  const blogContentArray = JSON.parse(localStorage.getItem("blogPosts")) || []
+  
   const blogContent = {
   name: username,
   title: title,
   blogPost: blogPost
   }
-  
-  const stuffInStorage = JSON.parse(localStorage.getItem("blogContent"))||[]
-  console.log(stuffInStorage)
+
+  blogContentArray.push(blogContent)
+  console.log(typeof blogContentArray)
+  // const stuffInStorage = JSON.parse(localStorage.getItem("blogContent"))||[]
+  // console.log(stuffInStorage)
   // will want to make into array and then push values into array
   // getItem - to access local storage - make array instead of obj to push obj into existing array - or can make a new array then push 
   // on blog page - read (get) local storage - then can create a for loop to create elements for card
   // parse to unstringify
-  localStorage.setItem("blogContent", JSON.stringify(blogContent));
+  localStorage.setItem("blogPosts", JSON.stringify(blogContentArray));
 });  
+
+// thoughts out loud (tyoed out).. when we click submit on the form the info provided should be collected into an array and that array stored in local storage. to do this, I think i need an empty array, set that equal to the value of blogContent, then save the array (stringified) into local storage. I set the key for the blog post, so far, as blogContent. 
+
+// I believe this will need to be stringified. To then append the collected data to the blog posts page, i will need to 
