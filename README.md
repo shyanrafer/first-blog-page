@@ -48,5 +48,7 @@ THEN I am presented with a JSON array of blog post objects, each including the p
 Throughout the project I ran into many bugs. Primarily with the form submit function. I couldn't figure out why when I input content the display message iterated would go directly to success even when not everything was inputted. To solve this, in a group with a couple of classmates, we hashed out ideas and deduced that the username, title, and blog post value had to be defined within the function. Initially I was attempting to gather the value with a variable defined on global scope. What ended up working was essentially telling JavaScript, "Hey, there's an element we want to lookout for - we will call it this - and later on I want to set a new variable equal to that element but let's grab the value so we can run this fuction." From there, I really struggled with storing items to local data and then gathering them as an object to later utilize. I spent a couple of days working that out. I know one needs to stringify content in order to save it to local storage. I am totally lost when it come to saving an object as a string in an array and then parsing the array to then get the string back to an object to, for lack of a better way to put it, do stuff with. 
 
 Screenshots
-
-
+LANDING PAGE
+![alt text](<assets/Screenshot 2024-05-23 at 6.59.08 PM.png>)
+BLOG PAGE
+![alt text](<assets/Screenshot 2024-05-23 at 6.59.23 PM.png>)
