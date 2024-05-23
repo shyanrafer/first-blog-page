@@ -11,7 +11,8 @@ function displayMessage(type, message) {
   formDisplayMessage.textContent = message;
   formDisplayMessage.setAttribute('class', type);
 }
-// must add .value otherwise ...
+// must add .value otherwise the selection will refelect the whole element instead of just the value inputted
+// .trim removes space before and after input
 formSubmitButton.addEventListener('click', function (event) {
   event.preventDefault();
   const username = usernameEl.value.trim()
@@ -28,6 +29,9 @@ formSubmitButton.addEventListener('click', function (event) {
     displayMessage('success', 'Your post has been saved');
   }
   
+  // will want to make into array and then push values into array
+  // getItem - to access local storage - make array instead of obj to push obj into existing array - or can make a new array then push 
+  // parse to unstringify
   const blogContentArray = JSON.parse(localStorage.getItem("blogPosts")) || []
   
   const blogContent = {
@@ -37,16 +41,10 @@ formSubmitButton.addEventListener('click', function (event) {
   }
 
   blogContentArray.push(blogContent)
-  console.log(typeof blogContentArray)
-  // const stuffInStorage = JSON.parse(localStorage.getItem("blogContent"))||[]
-  // console.log(stuffInStorage)
-  // will want to make into array and then push values into array
-  // getItem - to access local storage - make array instead of obj to push obj into existing array - or can make a new array then push 
   // on blog page - read (get) local storage - then can create a for loop to create elements for card
-  // parse to unstringify
   localStorage.setItem("blogPosts", JSON.stringify(blogContentArray));
+
+  
 });  
 
 // thoughts out loud (tyoed out).. when we click submit on the form the info provided should be collected into an array and that array stored in local storage. to do this, I think i need an empty array, set that equal to the value of blogContent, then save the array (stringified) into local storage. I set the key for the blog post, so far, as blogContent. 
-
-// I believe this will need to be stringified. To then append the collected data to the blog posts page, i will need to 

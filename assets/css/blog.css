@@ -1,0 +1,53 @@
+
+
+#header-section {
+  height: 50px;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.back-button {
+  width: 60px;
+  height: 40px;
+  
+}
+
+#dark-mode-button button {
+  height: 22px;
+  width: 25px;
+}
+
+#dark-mode-png {
+  width: 18px;
+  height: 10px;
+}
+
+/* light mode */
+.light {
+  background-color: antiquewhite;
+  color: black;
+  height: 100vh;
+}
+
+/*  */
+.light {
+  border-color: black;
+}
+
+
+/* dark mode */
+.dark {
+  background-color:#243447;
+  height: 100vh;
+  color: whitesmoke;
+ 
+}
+
+.dark {
+  border-color: #01F1F1;
+}
