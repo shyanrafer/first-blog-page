@@ -52,3 +52,9 @@ LANDING PAGE
 ![alt text](<assets/Screenshot 2024-05-23 at 6.59.08 PM.png>)
 BLOG PAGE
 ![alt text](<assets/Screenshot 2024-05-23 at 6.59.23 PM.png>)
+
+REPO LINK
+https://github.com/shyanrafer/first-blog-page
+
+DEPLOYED PAGE LINK
+https://shyanrafer.github.io/first-blog-page/
