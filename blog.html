@@ -6,7 +6,6 @@
   <title>Honk - Posts</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/blog.css">
-
 </head>
 
 <body>
@@ -14,20 +13,22 @@
     <div id="header-section">
         <header>
           <h1>Blog Page</h1>
-          <button class="back-button"></button>
+          <div>
+            <button class="back-button">Homepage</button>
+          </div>
+          
           <div id="dark-mode-button">
             <button><img src="./assets/dark-mode-button.PNG" id="dark-mode-png"/></button>
             <p>Dark/Light mode</p>
           </div>  
         </header>
       </div>
-      <!-- so for this one, i think all i need to do is inlude a link to the javascript file and with that it will be the thing to create the elements on this page once things are entered on the landing page. I am wondering if i need to style things with javascript or if after the elements are created i will be abel to style them with css.
+      <!-- so for this one, i think all i need to do is inlude a link to the javascript file and with that JS will be the thing to create the elements on this page . I am wondering if i need to style things with javascript or if after the elements are created i will be abel to style them with css.
       -->
       <!-- Things i will need: Name, Title, and post-content. Those are in the local data. I should be able to pull them from the local data and then assign an element with the value of the given data. this will require a get. I will need a variable in js to rep the value of the data. I believe i can assign id's to html elements created in js. That should make it possible to style tings after theyre created.  -->
       <card class="blog-post-card"></card> 
       
       <script src="./assets/javascript/script.js"></script>
-      <script src="./assets/javascript/blog.js"></script>
-  </div>      
+      <script src="./assets/javascript/blog.js"></script></div>      
 </body>
 </html>

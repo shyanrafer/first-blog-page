@@ -14,7 +14,7 @@ header {
 .back-button {
   width: 60px;
   height: 40px;
-  
+  font-size: 10px;
 }
 
 #dark-mode-button button {
@@ -39,6 +39,16 @@ header {
   border-color: black;
 }
 
+.light .back-button {
+  background-color: #01F1F1;
+  border-color: #243447;
+}
+
+.light .back-button:hover {
+  background-color: lightskyblue;
+  
+}
+
 
 /* dark mode */
 .dark {
@@ -50,4 +60,13 @@ header {
 
 .dark {
   border-color: #01F1F1;
+}
+
+.dark .back-button {
+  background-color: azure;
+  border-color: azure;
+}
+
+.dark .back-button:hover {
+  background-color: aqua;
 }

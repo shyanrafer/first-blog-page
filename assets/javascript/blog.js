@@ -5,3 +5,4 @@
 
 // then call the fucntion
 // first create element, then text, then append
+const blogContent = JSON.parse(localStorage.getItem('blogPosts'))
