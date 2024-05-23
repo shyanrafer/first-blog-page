@@ -2,9 +2,9 @@
 // Will also need to include a return of incomplete if the user doesnt fill out all the input boxes for the blog entry form
 const formSubmitButton = document.querySelector(`#form-submit-button`)
 const formDisplayMessage = document.querySelector(`#display-message`)
-let usernameEl = document.querySelector(`#username`)
-let titleEl = document.querySelector(`#form-title`)
-let blogPostEl = document.querySelector(`#post-content`)
+const usernameEl = document.querySelector(`#username`)
+const titleEl = document.querySelector(`#form-title`)
+const blogPostEl = document.querySelector(`#post-content`)
 // method is a 'preprogrammed' function
 
 function displayMessage(type, message) {
