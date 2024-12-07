@@ -17,6 +17,10 @@ header {
   font-size: 10px;
 }
 
+#dark-mode-button {
+  padding-left: 10px;
+}
+
 #dark-mode-button button {
   height: 22px;
   width: 25px;
@@ -69,4 +73,10 @@ header {
 
 .dark .back-button:hover {
   background-color: aqua;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
 }

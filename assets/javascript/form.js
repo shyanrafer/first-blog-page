@@ -26,7 +26,7 @@ formSubmitButton.addEventListener('click', function (event) {
   } else if (blogPost === '') {
     displayMessage('error', 'Blog post cannot be blank');
   } else {
-    displayMessage('success', 'Your post has been saved');
+    windowChange();
   }
   
   // will want to make into array and then push values into array
@@ -45,7 +45,6 @@ formSubmitButton.addEventListener('click', function (event) {
   localStorage.setItem("blogPosts", JSON.stringify(blogContentArray));
   console.log(blogContentArray)
 
-  windowChange();
   
 });  
 

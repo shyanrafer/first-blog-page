@@ -6,3 +6,17 @@
 // then call the fucntion
 // first create element, then text, then append
 const blogContent = JSON.parse(localStorage.getItem('blogPosts'))
+
+
+const homeBtn = document.querySelector('.back-button')
+
+homeBtn.addEventListener('click', function (event) {
+  event.preventDefault();
+  backToHome();
+})
+// call the following functin in the homepage button
+function backToHome() {
+   window.location.href = 'index.html'
+   return false
+  //  return false prevents default behavior of the broswer ie reloading
+}
