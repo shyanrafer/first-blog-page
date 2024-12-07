@@ -43,8 +43,16 @@ formSubmitButton.addEventListener('click', function (event) {
   blogContentArray.push(blogContent)
   // on blog page - read (get) local storage - then can create a for loop to create elements for card
   localStorage.setItem("blogPosts", JSON.stringify(blogContentArray));
+  console.log(blogContentArray)
 
+  windowChange();
   
 });  
+
+
+function windowChange() {
+  window.location.href = 'blog.html';
+  return false;
+}
 
 // thoughts out loud (tyoed out).. when we click submit on the form the info provided should be collected into an array and that array stored in local storage. to do this, I think i need an empty array, set that equal to the value of blogContent, then save the array (stringified) into local storage. I set the key for the blog post, so far, as blogContent. 
